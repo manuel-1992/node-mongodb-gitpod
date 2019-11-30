@@ -1,0 +1,19 @@
+<div class="row mt-4">
+<div class="col-md-4 offset-md-4">
+<div class="card-header">
+<h3>Tareas</h3>
+</div>
+{{#if tareaUdate}}
+<form action="/edit/{{tareaUdate._id}}" method="POST" class="card card-body">
+<div class="form-group">
+<input type="text" name="tarea" id="" placeholder="Ingrese una nueva tarea" class="form-control" value="{{tareaUdate.tarea}}">
+</div>
+<div class="form-group">
+<input type="text" name="descripcion" id="" placeholder="Ingrese la descripción" class="form-control"value="{{tareaUdate.descripcion}}">
+</div>
+<button type="submit" class="btn btn-primary">Guaradar</button>
+
+</form>
+{{/if }}
+</div>
+</div>

@@ -1,0 +1,29 @@
+<div class="container mt-4">
+<a href="/add" class="btn btn-secondary">New Tarea</a>
+
+<table class="table table-striped">
+
+  <thead>
+    <tr>
+      <th scope="col">Tarea</th>
+      <th scope="col">Descripción</th>     
+      <th scope="col">Action</th>   
+    </tr>
+  </thead>
+  {{#each tareas}}
+  <tbody>
+    <tr>
+     
+      <td>{{tarea}}</td>
+      <td>{{descripcion}}</td>
+      <td>
+      <a href="/edit/{{id}}" class="btn btn-warning"><i class="fa fa-edit"></i></a>
+      <a href="/delete/{{id}}" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+     
+   
+      </td>
+    </tr>   
+  </tbody>
+   {{/each }}
+</table>
+</div>
